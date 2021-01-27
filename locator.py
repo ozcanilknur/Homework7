@@ -1,6 +1,8 @@
 from selenium.webdriver.common.by import By
 
+
 class Locators:
+
     sign_in_assert = (By.CLASS_NAME, "nav-line-1-container")
     SING_IN = (By.XPATH, "(//*[@class= 'nav-a nav-a-2   nav-progressive-attribute'])[1]")
     EMAIL = (By.ID, "ap_email")
@@ -17,5 +19,9 @@ class Locators:
     WISH_LIST = (By.CSS_SELECTOR, "#nav-flyout-wl-items > div > a > span")
     DELETE_ITEM = (By.CSS_SELECTOR,  ".g-move-delete-buttons > span")
 
-    #ASSERT
-    SEARCH_LIST = (By.CLASS_NAME, "s-result-item")
+    #ASSERT LOCATORS
+    SEARCH_LIST = (By.CLASS_NAME, "a-dropdown-container")
+    SECOND_PAGE_ASSERT = (By.CLASS_NAME, "a-selected")
+    PRODUCT_NAME = (By.ID, "productTitle")
+    PRODUCT_NAME_WISH_LIST = (By.CSS_SELECTOR, "h3.a-size-base")
+    NO_PRODUCT = (By.XPATH, "//*[@class='a-box a-alert-inline a-alert-inline-success']")
