@@ -15,7 +15,7 @@ class Test(unittest.TestCase):
         driver.maximize_window()
         assert 'Amazon.com' in driver.title
         functions = Functions(driver)
-        functions.login("ilknur.ozcan@useinsider.com", "test123")
+        functions.login("email yazın", "sifre yazın")
         functions.search("Samsung")
         functions.category_page()
         smt = functions.product_page()
